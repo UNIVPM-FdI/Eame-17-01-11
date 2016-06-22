@@ -143,12 +143,14 @@ void sommaliste(lista inizio1, lista inizio2, lista& inizio3){
 int p=0;
 int q=0;
 while(inizio1!=0||inizio2!=0){
-    p=inizio1->valore;//prende il valore di inizio->valore e lo salva
-    q=inizio2->valore;
-    p+=q;
+    p=inizio1->valore;//prende il valore di inizio->valore e lo salva in p
+    q=inizio2->valore;//prende il valore di inizio->valore e lo salva in q
+    p+=q;//somma i due valori e li mette in p
     inserisci(inizio3,p);
-    inizio1=inizio1->succ;
-    inizio2=inizio2->succ;
+    inizio1=inizio1->succ;//si passa al successivo elemento
+    inizio2=inizio2->succ;//si passa al successivo elemento
 }
 cout<<"lista 1 e 2 sommate in lista 3"<<endl;
 }
+
+//Coded by DarkCerfa
